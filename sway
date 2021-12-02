@@ -167,7 +167,7 @@ output "*" bg {{ background }} fill
 
 bar {
     position top
-    status_command i3blocks
+    status_command i3status
 }
 
 #=====================================================================
