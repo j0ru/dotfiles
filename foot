@@ -1,6 +1,6 @@
 # -*- conf -*-
 
-font=monospace
+font=monospace{{#if font_size}}:size={{font_size}}{{/if}}
 # pad=2x2
 # term=foot
 

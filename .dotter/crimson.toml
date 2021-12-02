@@ -5,3 +5,6 @@ output DP-1 pos 0 520 res 1920x1080
 output DP-2 pos 1920 0 res 3840x1600
 output HDMI-A-1 disable
 """
+
+[foot.variables]
+font_size=12
