@@ -13,3 +13,6 @@ zshenv = "~/.zshenv"
 
 [mako.files]
 mako = "~/.config/mako/config"
+
+[nvim]
+nvim = "~/.config/nvim/init.vim"

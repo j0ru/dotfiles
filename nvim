@@ -1,0 +1,109 @@
+set nocompatible               " be improved, required
+filetype off                   " required
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.config/nvim/bundle/Vundle.vim
+call vundle#begin()            " required
+
+Plugin 'VundleVim/Vundle.vim'  " required
+Plugin 'godlygeek/tabular'
+Plugin 'w0rp/ale'
+Plugin 'junegunn/fzf.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'neoclide/jsonc.vim'
+Plugin 'Shougo/deoplete.nvim'
+Plugin 'roxma/nvim-yarp'
+Plugin 'roxma/vim-hug-neovim-rpc'
+
+Plugin 'vim-latex/vim-latex'
+
+Plugin 'kyazdani42/nvim-web-devicons'
+Plugin 'projekt0n/circles.nvim'
+
+call vundle#end()               " required
+filetype plugin indent on       " required
+
+
+"
+" Latex setup
+"
+
+filetype plugin on
+let g:tex_flavor='latex'
+
+"
+" Linter setup
+"
+
+call deoplete#custom#option('sources', {
+\ '_': ['ale'],
+\})
+let g:deoplete#enable_at_startup = 1
+
+" let g:ale_completion_autoimport = 1
+" let g:ale_completion_enabled = 1
+let g:ale_open_list = 1
+let g:ale_linters = {'markdown': [], 'tex': ['texlab'], 'text': ['languagetool']}
+let g:ale_fixers = { '*': ['remove_trailing_lines', 'trim_whitespace'] }
+
+let g:ale_alex_executable = 'alexjs'
+
+set completeopt=menu,menuone,preview,noselect,noinsert
+" set omnifunc=ale#completion#OmniFunc
+
+" set spelllang=en
+" autocmd FileType markdown setlocal spell
+" autocmd FileType gitcommit setlocal spell
+
+" Closes ALE list when last buffer is closed
+aug QFClose
+  au!
+  au WinEnter * if winnr('$') == 1 && &buftype == "quickfix"|q|endif
+aug END
+
+"
+" Indentation
+"
+
+set expandtab
+set tabstop=2 "changed for code later
+set softtabstop=2 " backspace now removes up to $softtabstop spaces at once
+set shiftwidth=2 " how much < and > shift indentation
+set autoindent "smartindent "automatically indent new line
+set smartindent
+set expandtab
+
+"
+" Search
+"
+
+set ignorecase
+set smartcase
+set incsearch
+set hlsearch
+
+"
+" Undo
+"
+
+set undofile
+set undodir=$HOME/.vim/undo
+set undolevels=1000  "how many undos
+set undoreload=10000 "how many lines to save for undo
+
+"
+" Visual Improvements
+"
+
+set relativenumber
+set number
+
+set laststatus=2
+set cursorline
+
+set showbreak=↪\
+set listchars=tab:→\ ,nbsp:␣,trail:•,extends:⟩,precedes:⟨
+set list!
+
+
+
+set clipboard+=unnamedplus
