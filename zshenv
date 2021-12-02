@@ -51,8 +51,6 @@ alias gdf='git diff'
 
 alias protorun="STEAM_COMPAT_DATA_PATH=/games/.proton_files /games/SteamLibrary/steamapps/common/Proton\ 5.0/proton"
 
-alias univpn="secret-tool lookup url 'https://vpn.uni-mannheim.de' | sudo openconnect 'https://vpn.uni-mannheim.de' --authgroup=WebVPN -u fgleumes"
-
 alias sctl='systemctl'
 alias uctl='systemctl --user'
 
