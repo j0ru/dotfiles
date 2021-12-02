@@ -10,3 +10,6 @@ kickoff = "~/.config/kickoff/config.toml"
 [zsh.files]
 zshrc = "~/.zshrc"
 zshenv = "~/.zshenv"
+
+[mako.files]
+mako = "~/.config/mako/config"
