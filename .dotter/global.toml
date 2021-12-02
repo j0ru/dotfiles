@@ -1,2 +1,5 @@
 [sway.files]
 sway = "~/.config/sway/config"
+
+[foot.files]
+foot = "~/.config/foot/foot.ini"
