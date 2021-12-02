@@ -16,3 +16,6 @@ mako = "~/.config/mako/config"
 
 [nvim.files]
 nvim = "~/.config/nvim/init.vim"
+
+[shell.files]
+bat = "~/.config/bat/config"

@@ -33,10 +33,9 @@ alias sv="sudo nvim"
 alias vim=nvim
 alias v=nvim
 
-alias f=fd
-alias bat="bat --theme='OneHalfLight'"
-
 alias sudo='sudo -E'
+
+alias cat=bat
 
 alias ls='ls --color=auto --group-directories-first'
 alias l='ls -1A'         # Lists in one column, hidden files.
