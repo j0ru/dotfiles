@@ -198,5 +198,5 @@ bindsym XF86Calculator exec --no-startup-id foot ipython
 
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
-#include /etc/sway/config.d/*
+include /etc/sway/config.d/*
 
