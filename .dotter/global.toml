@@ -7,6 +7,9 @@ foot = "~/.config/foot/foot.ini"
 [kickoff.files]
 kickoff = "~/.config/kickoff/config.toml"
 
+[zsh]
+depends = ["shell"]
+
 [zsh.files]
 zshrc = "~/.zshrc"
 zshenv = "~/.zshenv"
