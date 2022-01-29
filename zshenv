@@ -2,15 +2,18 @@
 # Environment
 #
 
+export GOROOT=~/.go
+export NIX_PATH=$HOME/.nix-defexpr/channels${NIX_PATH:+:}$NIX_PATH
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 export EDITOR=nvim
+
 export PATH=$PATH:~/.bin
-export PATH=$PATH:~/.npm-packages/bin
+export PATH=$PATH:~/.yarn/bin
 export PATH=$PATH:~/.local/bin
 export PATH=$PATH:~/go/bin
 export PATH=$PATH:~/.cargo/bin
 export PATH=$PATH:~/.local/share/gem/ruby/3.0.0/bin
-export NIX_PATH=$HOME/.nix-defexpr/channels${NIX_PATH:+:}$NIX_PATH
+
 
 #
 # Wayland
@@ -48,7 +51,7 @@ alias gpo='git push origin'
 alias gst='git status'
 alias gdf='git diff'
 
-alias protorun="STEAM_COMPAT_DATA_PATH=/games/.proton_files /games/SteamLibrary/steamapps/common/Proton\ 5.0/proton"
+alias protorun="STEAM_COMPAT_CLIENT_INSTALL_PATH=~/.local/share/Steam/ STEAM_COMPAT_DATA_PATH=~/.proton ~/.steam/steam/steamapps/common/Proton\ 6.3/proton"
 
 alias sctl='systemctl'
 alias uctl='systemctl --user'
