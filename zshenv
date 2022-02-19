@@ -19,10 +19,11 @@ export PATH=$PATH:~/.local/share/gem/ruby/3.0.0/bin
 # Wayland
 #
 export XDG_CURRENT_DESKTOP=sway
-export QT_QPA_PLATFORM=wayland
+export QT_QPA_PLATFORM=xcb
 
 if [ -n "$DESKTOP_SESSION" ];then
     eval $(gnome-keyring-daemon --start)
+    export SSH_AUTH_SOCK
 fi
 
 #
@@ -60,3 +61,20 @@ alias taskc='task context'
 alias t=task
 
 alias em='em --no-copy'
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+#
+#
+#
+
+export ANDROID_SDK_ROOT='/opt/android-sdk'
+export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools/
+export PATH=$PATH:$ANDROID_SDK_ROOT/tools/bin/
+export PATH=$PATH:$ANDROID_ROOT/emulator
+export PATH=$PATH:$ANDROID_SDK_ROOT/tools/
+export PATH=$PATH:$ANDROID_SDK_ROOT/tools/bin
+

@@ -6,7 +6,7 @@ prompt = ''
 # space between window border and the content in pixel
 padding = 100
 
-font = ''  # otf or ttf only
+fonts = ["agave Nerd Font"]
 font_size = 32.0
 
 [history]
