@@ -13,6 +13,7 @@ depends = ["shell"]
 [zsh.files]
 zshrc = "~/.zshrc"
 zshenv = "~/.zshenv"
+zsh_aliases = "~/.zsh_aliases"
 starship = "~/.config/starship.toml"
 
 [mako.files]

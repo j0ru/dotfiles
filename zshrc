@@ -1,4 +1,10 @@
 #
+# Prompt
+#
+
+eval "$(starship init zsh)"
+
+#
 # History
 #
 
@@ -17,8 +23,26 @@ setopt HIST_SAVE_NO_DUPS
 setopt HIST_VERIFY
 
 #
-# Prompt
+# Completions
 #
 
-eval "$(starship init zsh)"
+fpath+=(/usr/share/zsh/site-functions)
+autoload -Uz compinit && compinit
+zstyle ':completion:*' menu select
+
+#
+# Plugins
+#
+
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+#
+# Misc
+#
+
+setopt NO_CASE_GLOB
+setopt AUTO_CD
+setopt CORRECT
+setopt CORRECT_ALL
 
