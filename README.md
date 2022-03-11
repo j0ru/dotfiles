@@ -26,6 +26,7 @@ When that is installed there are a bunch of other dependencies that need install
   * bat
   * exa
   * zoxide
+  * dog
 * kickoff
 * mako
 * neovim
