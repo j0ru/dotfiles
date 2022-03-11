@@ -25,7 +25,9 @@ When that is installed there are a bunch of other dependencies that need install
   * starship
   * bat
   * exa
+  * zoxide
 * kickoff
 * mako
 * neovim
-
+* git
+  * git-delta
