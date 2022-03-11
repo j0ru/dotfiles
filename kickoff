@@ -7,7 +7,7 @@ prompt = ''
 padding = 100
 
 fonts = ["agave Nerd Font"]
-font_size = 32.0
+font_size = 38.0
 
 [history]
 decrease_interval = 48       # interval to decrease the number of launches
