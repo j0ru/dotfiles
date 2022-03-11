@@ -1,0 +1,33 @@
+add_newline = false
+
+format = """
+$username@$hostname \
+$localip\
+$shlvl\
+$directory\
+$git_branch\
+$git_commit\
+$git_state\
+$git_metrics\
+$git_status\
+$sudo\
+$cmd_duration\
+$jobs\
+$status\
+$character"""
+
+[shlvl]
+disabled = false
+
+[git_metrics]
+disabled = false
+
+[username]
+show_always = true
+format = "[$user]($style)"
+style_user = "bold yellow"
+
+[hostname]
+ssh_only = false
+format = "[$hostname]($style)"
+style = "bold green"
