@@ -46,3 +46,4 @@ setopt AUTO_CD
 setopt CORRECT
 setopt CORRECT_ALL
 
+eval "$(zoxide init zsh)"

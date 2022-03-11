@@ -31,3 +31,6 @@ style_user = "bold yellow"
 ssh_only = false
 format = "[$hostname]($style)"
 style = "bold green"
+
+[git_branch]
+format = "[$branch]($style) "

@@ -38,15 +38,6 @@ alias sctl='systemctl'
 alias uctl='systemctl --user'
 
 #
-# Misc
-#
-
-alias sudo='sudo -E'
-alias protorun="STEAM_COMPAT_CLIENT_INSTALL_PATH=~/.local/share/Steam/ STEAM_COMPAT_DATA_PATH=~/.proton ~/.steam/steam/steamapps/common/Proton\ 6.3/proton"
-alias cat=bat
-
-
-#
 # Directory Navigation
 #
 
@@ -60,3 +51,11 @@ alias 6='cd -6'
 alias 7='cd -7'
 alias 8='cd -8'
 alias 9='cd -9'
+
+#
+# Misc
+#
+
+alias sudo='sudo -E'
+alias protorun="STEAM_COMPAT_CLIENT_INSTALL_PATH=~/.local/share/Steam/ STEAM_COMPAT_DATA_PATH=~/.proton ~/.steam/steam/steamapps/common/Proton\ 6.3/proton"
+alias cat=bat
