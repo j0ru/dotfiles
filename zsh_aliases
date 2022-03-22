@@ -60,3 +60,4 @@ alias sudo='sudo -E'
 alias protorun="STEAM_COMPAT_CLIENT_INSTALL_PATH=~/.local/share/Steam/ STEAM_COMPAT_DATA_PATH=~/.proton ~/.steam/steam/steamapps/common/Proton\ 6.3/proton"
 alias cat=bat
 alias drill=dog
+alias cd=z
