@@ -28,3 +28,6 @@ bat = "~/.config/bat/config"
 [git.files]
 gitconfig = "~/.config/git/config"
 "themes.gitconfig" = "~/.config/git/themes.gitconfig"
+
+[js.files]
+npmrc = "~/.npmrc"
