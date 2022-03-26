@@ -29,6 +29,7 @@ setopt HIST_VERIFY
 fpath+=(/usr/share/zsh/site-functions)
 autoload -Uz compinit && compinit
 zstyle ':completion:*' menu select
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
 #
 # Plugins
