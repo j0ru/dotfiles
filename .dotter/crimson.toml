@@ -1,9 +1,8 @@
 [sway.variables]
 background = "~/pictures/wallpaper.png"
 outputs = """
-output DP-3 pos 3840 520 res 1920x1080
-output DP-1 pos 0 0 res 3840x1600
-output HDMI-A-1 disable
+output DP-3 pos 0 520 res 1920x1080
+output DP-2 pos 1920 0 res 3840x1600
 """
 
 [foot.variables]
