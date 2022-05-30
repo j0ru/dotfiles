@@ -31,3 +31,6 @@ gitconfig = "~/.config/git/config"
 
 [js.files]
 npmrc = "~/.npmrc"
+
+[helix.files]
+helix = "~/.config/helix/config.toml"
