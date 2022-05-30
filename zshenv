@@ -5,7 +5,7 @@
 export GOROOT=~/.go
 export NIX_PATH=$HOME/.nix-defexpr/channels${NIX_PATH:+:}$NIX_PATH
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
-export EDITOR=nvim
+export EDITOR=helix
 
 export PATH=$PATH:~/.bin
 export PATH=$PATH:~/.yarn/bin
