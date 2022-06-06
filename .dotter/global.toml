@@ -35,3 +35,6 @@ npmrc = "~/.npmrc"
 
 [helix.files]
 helix = "~/.config/helix/config.toml"
+
+[waybar.files]
+waybar = "~/.config/waybar"
