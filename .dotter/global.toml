@@ -1,5 +1,6 @@
 [sway.files]
 sway = "~/.config/sway/config"
+wallpaper = { target = "~/.config/sway/background.png", type = "symbolic" }
 
 [foot.files]
 foot = "~/.config/foot/foot.ini"

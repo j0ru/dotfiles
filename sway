@@ -132,9 +132,9 @@ exec swayidle -w \
   resume 'swaymsg "output * dpms on"'
 
 # green-brown, focus dark
-set $cfocused #34626C
-set $cfocused_inactive #839B97
-set $cunfocused #CFD3CE
+set $cfocused #7D56C2
+set $cfocused_inactive #23272e
+set $cunfocused #23272e
 set $cfontl #F1F6F9
 set $cfontd #000000
 
@@ -160,7 +160,7 @@ input type:keyboard {
   xkb_options "grp:ctrl_alt_toggle,grp_led:scrol"
 }
 
-output "*" bg {{ background }} fill
+output "*" bg "$HOME/.config/sway/background.png" fill
 
 {{ outputs }}
 
@@ -168,10 +168,7 @@ output "*" bg {{ background }} fill
 # Bar config
 #=====================================================================
 
-bar {
-    position top
-    status_command i3status
-}
+bar swaybar_command waybar
 
 #=====================================================================
 # User startup
