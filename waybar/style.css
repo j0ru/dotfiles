@@ -103,12 +103,12 @@ label:focus {
 
 #pulseaudio {
     background-color: #98C379;
-    color: #000000;
+    color: #282C34;
 }
 
-#pulseaudio.muted {
-    background-color: #90b1b1;
-    color: #2a5c45;
+#battery {
+    background-color: #e5c07b;
+    color: #282C34;
 }
 
 #custom-media {
