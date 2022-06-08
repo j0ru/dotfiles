@@ -9,6 +9,7 @@ export EDITOR=helix
 
 export PATH=$PATH:~/.bin
 export PATH=$PATH:~/.yarn/bin
+export PATH=$PATH:~/.npm-packages/bin
 export PATH=$PATH:~/.local/bin
 export PATH=$PATH:~/go/bin
 export PATH=$PATH:~/.cargo/bin
