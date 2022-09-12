@@ -9,9 +9,9 @@ alias p="pacman"
 # Neovim
 #
 
-alias sv="sudo nvim"
-alias vim=nvim
-alias v=nvim
+# alias sv="sudo nvim"
+# alias vim=nvim
+# alias v=nvim
 
 #
 # Helix
@@ -68,3 +68,4 @@ alias protorun="STEAM_COMPAT_CLIENT_INSTALL_PATH=~/.local/share/Steam/ STEAM_COM
 alias cat=bat
 alias drill=dog
 alias cd=z
+alias led="ledger -f main.ledger"

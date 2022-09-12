@@ -15,12 +15,13 @@ export PATH=$PATH:~/go/bin
 export PATH=$PATH:~/.cargo/bin
 
 export PATH="$PATH:$HOME/.rvm/bin"
+export CHROOT="$HOME/chroot"
 
 #
 # Wayland
 #
 export XDG_CURRENT_DESKTOP=sway
-export QT_QPA_PLATFORM=xcb
+export QT_QPA_PLATFORM=wayland
 
 if [ -n "$DESKTOP_SESSION" ];then
     eval $(gnome-keyring-daemon --start)

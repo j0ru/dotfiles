@@ -44,7 +44,5 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 
 setopt NO_CASE_GLOB
 setopt AUTO_CD
-setopt CORRECT
-setopt CORRECT_ALL
 
 eval "$(zoxide init zsh)"
