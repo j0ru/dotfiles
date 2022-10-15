@@ -69,3 +69,4 @@ alias cat=bat
 alias drill=dog
 alias cd=z
 alias led="ledger -f main.ledger"
+alias mpvl="mpv --loop"
