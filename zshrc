@@ -55,8 +55,3 @@ setopt NO_CASE_GLOB
 setopt AUTO_CD
 
 eval "$(zoxide init zsh)"
-
-# Home and End key
-bindkey  "^[[H"   beginning-of-line
-bindkey  "^[[F"   end-of-line
-bindkey  "^[[3~"  delete-char
