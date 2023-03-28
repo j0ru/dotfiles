@@ -18,6 +18,7 @@ set $down r
 bindsym $mod+Return exec foot
 bindsym $mod+Shift+q kill
 bindsym $mod+d exec kickoff
+{{ bindsyms }}
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+e exit
 
@@ -127,11 +128,14 @@ bindsym $mod+w mode "resize"
 
 default_border pixel 3
 
+{{#if swayidle}}
+{{swayidle}}
+{{else}}
 exec swayidle -w \
   timeout 1805 'swaymsg "output * dpms off"' \
   resume 'swaymsg "output * dpms on"'
+{{/if}}
 
-# green-brown, focus dark
 set $cfocused #7D56C2
 set $cfocused_inactive #23272e
 set $cunfocused #23272e
@@ -149,6 +153,8 @@ exec_always {
     gsettings set $gnome-schema icon-theme 'Papirus'
     gsettings set $gnome-schema cursor-theme 'Adawaita'
 }
+
+seat * hide_cursor 5000
 
 #=====================================================================
 # IO config
@@ -171,10 +177,17 @@ output "*" bg "$HOME/.config/sway/background.png" fill
 bar swaybar_command waybar
 
 #=====================================================================
+# Workspace bindings
+#=====================================================================
+
+{{ workspace_bindings }}
+
+#=====================================================================
 # User startup
 #=====================================================================
 
 exec_always /home/joru/.screenlayout/wayland.sh
+{{ startup }}
 
 #=====================================================================
 # User shortcuts
@@ -201,3 +214,4 @@ exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
 include /etc/sway/config.d/*
 
+exec systemctl --user start sway.target

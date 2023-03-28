@@ -1,0 +1,30 @@
+[sway.variables]
+outputs = """
+output eDP-1 pos 0 1120 res 3840x2160
+output HDMI-A-1 pos 2559 1120 res 3440x1440
+output DP-3 pos 5999 0 res 2560x1440
+output DP-3 transform 270
+"""
+workspace_bindings = """
+assign [app_id="fluffychat"] workspace number 9
+assign [app_id="evolution"] workspace number 9
+for_window [class="Spotify"] move container to workspace 0
+for_window [class="Element"] move container to workspace 9
+"""
+startup = """
+exec --no-startup-id fluffychat
+exec --no-startup-id evolution
+"""
+swayidle = """
+exec swayidle -w timeout 600 'swaylock'
+"""
+bindsyms = """
+bindsym $mod+p exec passmenu
+"""
+
+[waybar.variables]
+modules = '["sway/language", "battery", "pulseaudio", "network", "cpu", "memory", "clock", "tray"]'
+
+[foot.variables]
+font_size = 12
+light_theme = false

@@ -49,6 +49,7 @@ window#waybar.hidden {
 }
 
 #clock,
+#language,
 #battery,
 #cpu,
 #memory,
@@ -84,6 +85,11 @@ window#waybar.hidden {
 
 label:focus {
     background-color: #000000;
+}
+
+#language {
+    background-color: #C678DD;
+    color: #282C34;
 }
 
 #memory {
@@ -170,14 +176,6 @@ label:focus {
 
 #mpd.paused {
     background-color: #51a37a;
-}
-
-#language {
-    background: #00b093;
-    color: #740864;
-    padding: 0 5px;
-    margin: 0 5px;
-    min-width: 16px;
 }
 
 #keyboard-state {

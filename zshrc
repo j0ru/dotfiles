@@ -1,4 +1,12 @@
 #
+# Sway Autostart
+#
+
+if [ -z $DISPLAY ] && [ "$(tty)" = "/dev/tty1" ]; then
+	  exec sway
+fi
+
+#
 # Prompt
 #
 
@@ -55,3 +63,6 @@ setopt NO_CASE_GLOB
 setopt AUTO_CD
 
 eval "$(zoxide init zsh)"
+
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"

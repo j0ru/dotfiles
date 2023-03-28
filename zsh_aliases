@@ -14,13 +14,6 @@ alias p="pacman"
 # alias v=nvim
 
 #
-# Helix
-#
-
-alias hx=helix
-alias shx="sudo helix"
-
-#
 # ls / exa
 #
 
@@ -63,6 +56,9 @@ alias 9='cd -9'
 # Misc
 #
 
+alias tf=terraform
+alias tfa='terraform apply'
+alias tfd='terraform destroy'
 alias sudo='sudo -E'
 alias protorun="STEAM_COMPAT_CLIENT_INSTALL_PATH=~/.local/share/Steam/ STEAM_COMPAT_DATA_PATH=~/.proton ~/.steam/steam/steamapps/common/Proton\ 6.3/proton"
 alias cat=bat
@@ -70,3 +66,31 @@ alias drill=dog
 alias cd=z
 alias led="ledger -f main.ledger"
 alias mpvl="mpv --loop"
+alias ra=ranger
+
+#
+# ERNW
+#
+
+alias ernwvpn="/usr/bin/sudo openvpn /etc/openvpn/client/ernw.conf"
+
+proxy_ernw(){
+		if [[ $1 = 'on' ]]
+		then
+				export HTTP_PROXY="http://proxy.ernw.net:3128"
+				export HTTPS_PROXY="http://proxy.ernw.net:3128"
+				export FTP_PROXY="http://proxy.ernw.net:3128"
+				export http_proxy="http://proxy.ernw.net:3128"
+				export https_proxy="http://proxy.ernw.net:3128"
+				export ftp_proxy="http://proxy.ernw.net:3128"
+				export no_proxy="*.ernw.net"
+		elif [[ $1 = 'off' ]]
+		then
+				export http_proxy=
+				export https_proxy=
+				export ftp_proxy=
+				export no_proxy=
+		else
+				echo 'usage proxy_ernw $1 (on or off)'
+		fi
+}

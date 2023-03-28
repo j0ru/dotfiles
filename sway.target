@@ -1,0 +1,4 @@
+[Unit]
+Description=Sway Startup Target
+Requires=default.target
+After=default.target

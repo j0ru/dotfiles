@@ -4,11 +4,11 @@ prompt = ''
 # space between window border and the content in pixel
 padding = 100
 
-fonts = ["agave Nerd Font"]
+fonts = ["monospace"]
 font_size = 38.0
 
 [history]
-decrease_interval = 48       # interval to decrease the number of launches
+decrease_interval = 0       # interval to decrease the number of launches
 
 [colors]
 # color format: rgb or rgba, if transparency is desired

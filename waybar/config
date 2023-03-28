@@ -4,7 +4,7 @@
     "spacing": 4,
     "modules-left": ["sway/workspaces", "sway/mode", "custom/media"],
     "modules-center": ["sway/window"],
-    "modules-right": ["battery", "pulseaudio", "network", "cpu", "memory", "clock", "tray"],
+    "modules-right": {{ modules }},
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>"
     },
@@ -60,5 +60,8 @@
             "default": ["", "", ""]
         },
         "on-click": "pavucontrol"
+    },
+    "sway/language": {
+        "format": "{short} {variant}",
     },
 }

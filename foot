@@ -2,7 +2,7 @@
 
 font=monospace{{#if font_size}}:size={{font_size}}{{/if}}
 # pad=2x2
-# term=foot
+term=xterm-256color
 
 [scrollback]
 lines=1000
@@ -20,6 +20,7 @@ lines=1000
 # alternate-scroll-mode=yes
 
 [colors]
+{{#if light_theme}}
 foreground=383a42
 background=fafafa
 regular0=282c34
@@ -29,6 +30,26 @@ regular3=e89900
 regular4=4078f2
 regular5=b624b4
 regular6=018abc
+{{else}}
+foreground=abb2bf
+background=282c34
+regular0=2c323c
+regular1=e06c75
+regular2=98c379
+regular3=e5c07b
+regular4=61afef
+regular5=c678dd
+regular6=56b6c2
+regular7=5c6370
+bright0=3e4452
+bright1=e06c75
+bright2=98c379
+bright3=e5c07b
+bright4=61afef
+bright5=c678dd
+bright6=56b6c2
+bright7=abb2bf
+{{/if}}
 
 [csd]
 # preferred=server
