@@ -1,6 +1,6 @@
 [sway.variables]
 outputs = """
-output eDP-1 pos 0 1120 res 3840x2160
+output eDP-1 pos 639 1480 res 3840x2160
 output HDMI-A-1 pos 2559 1120 res 3440x1440
 output DP-3 pos 5999 0 res 2560x1440
 output DP-3 transform 270
