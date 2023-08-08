@@ -163,7 +163,7 @@ seat * hide_cursor 5000
 input type:keyboard {
   xkb_layout "de,de"
   xkb_variant "neo,"
-  xkb_options "grp:ctrl_alt_toggle,grp_led:scrol"
+  xkb_options "grp:lctrl_lwin_toggle"
 }
 
 output "*" bg "$HOME/.config/sway/background.png" fill

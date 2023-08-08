@@ -14,6 +14,9 @@ decrease_interval = 0       # interval to decrease the number of launches
 # color format: rgb or rgba, if transparency is desired
 background = '#282c34aa'
 prompt = '#abb2bf'
-text = '#ffffff'           # for search results
-text_query = '#e5c07b'     # for the search query
-text_selected = '#61afef'  # for the currently selected result
+text = '#ffffff'          # for search results
+text_query = '#e5c07b'    # for the search query
+text_selected = '#61afef' # for the currently selected result
+
+[sorting]
+head_bonus = 3000
