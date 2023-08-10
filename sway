@@ -174,7 +174,20 @@ output "*" bg "$HOME/.config/sway/background.png" fill
 # Bar config
 #=====================================================================
 
-bar swaybar_command waybar
+bar {
+    font pango:DejaVu Sans Mono, FontAwesome 12
+    position top
+    status_command /usr/bin/i3status-rs
+    colors {
+        separator #666666
+        background #282c34
+        statusline #dddddd
+        focused_workspace #56B6C2 #56B6C2 #ffffff
+        active_workspace #282c34 #282c34 #ffffff
+        inactive_workspace #282c34 #282c34 #888888
+        urgent_workspace #eb4d4b #eb4d4b #282c34
+    }
+}
 
 #=====================================================================
 # Workspace bindings

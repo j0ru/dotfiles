@@ -37,3 +37,7 @@ helix = "~/.config/helix/config.toml"
 
 [waybar.files]
 waybar = "~/.config/waybar"
+
+[i3status.files]
+i3status-rs = "~/.config/i3status-rust/config.toml"
+i3status-rs-theme = "~/.config/i3status-rust/themes/onedark.toml"
