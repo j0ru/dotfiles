@@ -4,3 +4,9 @@ outputs = """
 output HDMI-A-1 mode 1920x1080 pos 1920 0
 output eDP-1 mode 1920x1080 pos 0 0
 """
+bindsyms = ""
+startup = ""
+workspace_bindings = ""
+
+[foot.variables]
+font_size = 12

@@ -163,7 +163,7 @@ seat * hide_cursor 5000
 input type:keyboard {
   xkb_layout "de,de"
   xkb_variant "neo,"
-  xkb_options "grp:lctrl_lwin_toggle"
+  xkb_options "grp:ctrl_alt_toggle,grp_led:scrol"
 }
 
 output "*" bg "$HOME/.config/sway/background.png" fill
@@ -207,6 +207,7 @@ exec_always /home/joru/.screenlayout/wayland.sh
 #=====================================================================
 
 bindsym $mod+o exec --no-startup-id swaylock
+bindsym $mod+Shift+p exec --no-startup-id grim -g "$(slurp)"
 bindsym XF86AudioMute exec --no-startup-id pamixer -t
 bindsym XF86AudioLowerVolume exec --no-startup-id pamixer -d 5
 bindsym XF86AudioRaiseVolume exec --no-startup-id pamixer -i 5
