@@ -32,6 +32,9 @@ alert = 10.0
 format = " $icon root: $available.eng(w:2) "
 
 [[block]]
+block = "net"
+
+[[block]]
 block = "pacman"
 signal = 1
 
